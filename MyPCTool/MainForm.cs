@@ -36,13 +36,13 @@ namespace MyTool
                 proc.Start();
                 proc.WaitForExit();
                 // MessageBox.Show("成功！");
-                Log.RegisterLog(filename + "  成功", DateTime.Now.ToString());
+               // Log.RegisterLog(filename + "  成功", DateTime.Now.ToString());
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Exception Occurred :{0},{1}", ex.Message, ex.StackTrace.ToString());
                 MessageBox.Show("失败！原因:" + ex.Message + "");
-                Log.RegisterLog(ex.Message, DateTime.Now.ToString());
+              //  Log.RegisterLog(ex.Message, DateTime.Now.ToString());
             }
         }
         //dosCommand Dos命令语句    
