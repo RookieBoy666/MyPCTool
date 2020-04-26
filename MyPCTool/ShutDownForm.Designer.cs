@@ -70,7 +70,7 @@
             this.Controls.Add(this.textBox1);
             this.Name = "ShutDownForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ShutDownForm";
+            this.Text = "定时关机";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -18,7 +18,13 @@ namespace MyPCTool
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("explorer.exe", "http://www.baidu.com");
+            System.Diagnostics.Process.Start("explorer.exe", "https://www.cnblogs.com/tiancaige/p/12778869.html");
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("explorer.exe", "https://github.com/RookieBoy666/MyPCTool");
+
         }
     }
 }
