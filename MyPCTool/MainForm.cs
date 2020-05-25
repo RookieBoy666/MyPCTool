@@ -188,9 +188,9 @@ namespace MyTool
 
             Thread th = new Thread(delegate () { new WeatherForm().ShowDialog(); });
             th.Start();
-            this.Close();
             //this.Close();
-            this.Dispose();
+            ////this.Close();
+            //this.Dispose();
 
         }
 
@@ -212,13 +212,19 @@ namespace MyTool
         {
             Thread th = new Thread(delegate () { new ShutDownForm().ShowDialog(); });
             th.Start();
-            this.Close();
+            //this.Close();
 
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Thread th = new Thread(delegate () { new QRCode().ShowDialog(); });
+            th.Start();
         }
     }
 }

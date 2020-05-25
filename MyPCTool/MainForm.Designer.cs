@@ -36,6 +36,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button4 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,7 +62,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(136, 302);
+            this.button3.Location = new System.Drawing.Point(126, 377);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 2;
@@ -116,11 +117,22 @@
             this.关于ToolStripMenuItem.Text = "关于";
             this.关于ToolStripMenuItem.Click += new System.EventHandler(this.关于ToolStripMenuItem_Click);
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(95, 286);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(153, 23);
+            this.button4.TabIndex = 13;
+            this.button4.Text = "生成二维码";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(350, 380);
+            this.ClientSize = new System.Drawing.Size(350, 554);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button5);
@@ -150,6 +162,7 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 关于ToolStripMenuItem;
+        private System.Windows.Forms.Button button4;
     }
 }
 
