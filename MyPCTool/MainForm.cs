@@ -226,5 +226,12 @@ namespace MyTool
             Thread th = new Thread(delegate () { new QRCode().ShowDialog(); });
             th.Start();
         }
+
+        private void File_Click(object sender, EventArgs e)
+        {
+          // Thread th = new Thread(delegate () { new File().ShowDialog(); });
+            File file = new File();
+            file.Show();
+        }
     }
 }

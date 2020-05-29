@@ -37,6 +37,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button4 = new System.Windows.Forms.Button();
+            this.File = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,7 +63,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(126, 377);
+            this.button3.Location = new System.Drawing.Point(127, 358);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 2;
@@ -119,7 +120,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(95, 286);
+            this.button4.Location = new System.Drawing.Point(95, 281);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(153, 23);
             this.button4.TabIndex = 13;
@@ -127,11 +128,22 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // File
+            // 
+            this.File.Location = new System.Drawing.Point(95, 319);
+            this.File.Name = "File";
+            this.File.Size = new System.Drawing.Size(153, 23);
+            this.File.TabIndex = 14;
+            this.File.Text = "文件";
+            this.File.UseVisualStyleBackColor = true;
+            this.File.Click += new System.EventHandler(this.File_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(350, 554);
+            this.Controls.Add(this.File);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button7);
@@ -163,6 +175,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 关于ToolStripMenuItem;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button File;
     }
 }
 
