@@ -1,5 +1,6 @@
-﻿using Material;
-using MyPCTool;
+﻿using MyPCTool;
+using MyPCTool.ClassHelper;
+using MyPCTool.SystemTool;
 using System;
 using System.Diagnostics;
 using System.Threading;
@@ -105,9 +106,7 @@ namespace MyTool
 
         private void button3_Click(object sender, EventArgs e)
         {
-
-
-
+            FormAnimate.AnimateWindow(this.Handle, 2000, FormAnimate.AW_SLIDE | FormAnimate.AW_HIDE | FormAnimate.AW_BLEND);
             this.Close();
             this.Dispose();
         }
@@ -196,15 +195,12 @@ namespace MyTool
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-
+            FormAnimate.AnimateWindow(this.Handle, 1000, FormAnimate.AW_BLEND);
         }
 
         private void 关于ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Thread th = new Thread(delegate () { new AboutForm().ShowDialog(); });
-            th.Start();
-
-            //this.Close();
+          
 
         }
 
@@ -232,6 +228,37 @@ namespace MyTool
           // Thread th = new Thread(delegate () { new File().ShowDialog(); });
             File file = new File();
             file.Show();
+        }
+
+        private void activation_Click(object sender, EventArgs e)
+        {
+            Activation activation = new Activation();
+            activation.Show();
+        }
+
+        private void 关于ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Thread th = new Thread(delegate () { new AboutForm().ShowDialog(); });
+            th.Start();
+
+            //this.Close();
+        }
+
+        private void 更新ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AboutUpdate update = new AboutUpdate();
+            update.Show();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            SystemTool tool = new SystemTool();
+            tool.Show();
+        }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            FormAnimate.AnimateWindow(this.Handle, 1000, FormAnimate.AW_SLIDE | FormAnimate.AW_HIDE | FormAnimate.AW_BLEND);
         }
     }
 }

@@ -67,9 +67,19 @@ namespace MyPCTool
             qrcodeencoder.QRCodeScale = size;//二维码规模大小
             qrcodeencoder.QRCodeVersion = version;//二维码版本
             qrcodeencoder.QRCodeErrorCorrect = QRCodeEncoder.ERROR_CORRECTION.M;//设置错误校验（错误更正）的级别：中等M
-            Image img = qrcodeencoder.Encode(link);//生成二维码image图片
+            Image img = qrcodeencoder.Encode("");//生成二维码image图片}
+            try
+            {
+                  img = qrcodeencoder.Encode(link);//生成二维码image图片}
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("当前二维码规模和版本太低，请更改规模或者版本！");
+            }
             return img;
         }
+      
 
         private void btnSaveQRCode_Click_1(object sender, EventArgs e)
         {
@@ -89,10 +99,10 @@ namespace MyPCTool
                 {
                     this.pic_MyImg.Image.Save(saveqrimg.FileName, System.Drawing.Imaging.ImageFormat.Jpeg);
                 }
-                else
-                    {
-                        MessageBox.Show("保存失败！");
-                    }
+                //else
+                //    {
+                //        MessageBox.Show("保存失败！");
+                //    }
                 }
                 ));
                 t.SetApartmentState(ApartmentState.STA);

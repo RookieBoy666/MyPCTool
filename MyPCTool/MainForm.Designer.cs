@@ -36,8 +36,12 @@
             this.button6 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.更新ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.关于ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.button4 = new System.Windows.Forms.Button();
             this.File = new System.Windows.Forms.Button();
+            this.activation = new System.Windows.Forms.Button();
+            this.systemTool = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,7 +67,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(127, 358);
+            this.button3.Location = new System.Drawing.Point(127, 447);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 2;
@@ -113,10 +117,27 @@
             // 
             // 关于ToolStripMenuItem
             // 
+            this.关于ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.更新ToolStripMenuItem,
+            this.关于ToolStripMenuItem1});
             this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
             this.关于ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
-            this.关于ToolStripMenuItem.Text = "关于";
+            this.关于ToolStripMenuItem.Text = "选项";
             this.关于ToolStripMenuItem.Click += new System.EventHandler(this.关于ToolStripMenuItem_Click);
+            // 
+            // 更新ToolStripMenuItem
+            // 
+            this.更新ToolStripMenuItem.Name = "更新ToolStripMenuItem";
+            this.更新ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.更新ToolStripMenuItem.Text = "更新";
+            this.更新ToolStripMenuItem.Click += new System.EventHandler(this.更新ToolStripMenuItem_Click);
+            // 
+            // 关于ToolStripMenuItem1
+            // 
+            this.关于ToolStripMenuItem1.Name = "关于ToolStripMenuItem1";
+            this.关于ToolStripMenuItem1.Size = new System.Drawing.Size(100, 22);
+            this.关于ToolStripMenuItem1.Text = "关于";
+            this.关于ToolStripMenuItem1.Click += new System.EventHandler(this.关于ToolStripMenuItem1_Click);
             // 
             // button4
             // 
@@ -138,11 +159,33 @@
             this.File.UseVisualStyleBackColor = true;
             this.File.Click += new System.EventHandler(this.File_Click);
             // 
+            // activation
+            // 
+            this.activation.Location = new System.Drawing.Point(95, 358);
+            this.activation.Name = "activation";
+            this.activation.Size = new System.Drawing.Size(153, 23);
+            this.activation.TabIndex = 15;
+            this.activation.Text = "激活系统";
+            this.activation.UseVisualStyleBackColor = true;
+            this.activation.Click += new System.EventHandler(this.activation_Click);
+            // 
+            // systemTool
+            // 
+            this.systemTool.Location = new System.Drawing.Point(95, 398);
+            this.systemTool.Name = "systemTool";
+            this.systemTool.Size = new System.Drawing.Size(153, 23);
+            this.systemTool.TabIndex = 16;
+            this.systemTool.Text = "系统评测工具";
+            this.systemTool.UseVisualStyleBackColor = true;
+            this.systemTool.Click += new System.EventHandler(this.button8_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(350, 554);
+            this.Controls.Add(this.systemTool);
+            this.Controls.Add(this.activation);
             this.Controls.Add(this.File);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button6);
@@ -156,6 +199,7 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PC工具";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -176,6 +220,10 @@
         private System.Windows.Forms.ToolStripMenuItem 关于ToolStripMenuItem;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button File;
+        private System.Windows.Forms.Button activation;
+        private System.Windows.Forms.ToolStripMenuItem 更新ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 关于ToolStripMenuItem1;
+        private System.Windows.Forms.Button systemTool;
     }
 }
 

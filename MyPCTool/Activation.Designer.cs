@@ -1,6 +1,6 @@
 ﻿namespace MyPCTool
 {
-    partial class File
+    partial class Activation
     {
         /// <summary>
         /// Required designer variable.
@@ -28,44 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtPath = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // txtPath
-            // 
-            this.txtPath.Location = new System.Drawing.Point(113, 73);
-            this.txtPath.Name = "txtPath";
-            this.txtPath.Size = new System.Drawing.Size(307, 21);
-            this.txtPath.TabIndex = 0;
-            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(209, 132);
+            this.button1.Location = new System.Drawing.Point(93, 69);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "打开";
+            this.button1.TabIndex = 0;
+            this.button1.Text = "激活";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // File
+            // Activation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(495, 226);
+            this.ClientSize = new System.Drawing.Size(278, 172);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.txtPath);
-            this.Name = "File";
-            this.Text = "File";
+            this.Name = "Activation";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "激活面板";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtPath;
         private System.Windows.Forms.Button button1;
     }
 }

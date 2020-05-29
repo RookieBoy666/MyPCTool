@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Material
+namespace MyPCTool
 {
     public static  class Log
     {

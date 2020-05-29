@@ -56,7 +56,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(370, 35);
+            this.label2.Location = new System.Drawing.Point(341, 34);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 12);
             this.label2.TabIndex = 1;
@@ -71,7 +71,7 @@
             // 
             // num_version
             // 
-            this.num_version.Location = new System.Drawing.Point(441, 33);
+            this.num_version.Location = new System.Drawing.Point(412, 25);
             this.num_version.Name = "num_version";
             this.num_version.Size = new System.Drawing.Size(120, 21);
             this.num_version.TabIndex = 3;
@@ -88,8 +88,9 @@
             // txb_LinkAddress
             // 
             this.txb_LinkAddress.Location = new System.Drawing.Point(105, 75);
+            this.txb_LinkAddress.Multiline = true;
             this.txb_LinkAddress.Name = "txb_LinkAddress";
-            this.txb_LinkAddress.Size = new System.Drawing.Size(456, 21);
+            this.txb_LinkAddress.Size = new System.Drawing.Size(427, 49);
             this.txb_LinkAddress.TabIndex = 5;
             // 
             // btnCreateQRCode
@@ -132,7 +133,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(619, 586);
+            this.ClientSize = new System.Drawing.Size(573, 586);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnSaveQRCode);
             this.Controls.Add(this.btnCreateQRCode);

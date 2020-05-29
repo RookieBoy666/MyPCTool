@@ -60,8 +60,22 @@
     <Compile Include="AboutForm.Designer.cs">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AboutUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutUpdate.Designer.cs">
+      <DependentUpon>AboutUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Activation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Activation.Designer.cs">
+      <DependentUpon>Activation.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClassHelper\Log.cs" />
+    <Compile Include="ClassHelper\StartExeFile.cs" />
     <Compile Include="ClassHelper\TextBoxToolV2.cs" />
+    <Compile Include="ClassHelper\FormAnimate.cs" />
     <Compile Include="File.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +103,12 @@
       <DependentUpon>ShutDownForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ClassHelper\Weather.cs" />
+    <Compile Include="SystemTool\SystemTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemTool\SystemTool.Designer.cs">
+      <DependentUpon>SystemTool.cs</DependentUpon>
+    </Compile>
     <Compile Include="WeatherForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +122,12 @@
     </Compile>
     <EmbeddedResource Include="AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutUpdate.resx">
+      <DependentUpon>AboutUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Activation.resx">
+      <DependentUpon>Activation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="File.resx">
       <DependentUpon>File.cs</DependentUpon>
@@ -123,6 +149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ShutDownForm.resx">
       <DependentUpon>ShutDownForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemTool\SystemTool.resx">
+      <DependentUpon>SystemTool.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WeatherForm.resx">
       <DependentUpon>WeatherForm.cs</DependentUpon>
@@ -166,6 +195,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Web References\cn.com.webxml.www\WeatherWebService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dos\KMS.exe" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

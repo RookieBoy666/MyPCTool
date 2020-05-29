@@ -1,6 +1,6 @@
 ﻿namespace MyPCTool
 {
-    partial class File
+    partial class AboutUpdate
     {
         /// <summary>
         /// Required designer variable.
@@ -28,36 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtPath = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
-            // txtPath
+            // linkLabel1
             // 
-            this.txtPath.Location = new System.Drawing.Point(113, 73);
-            this.txtPath.Name = "txtPath";
-            this.txtPath.Size = new System.Drawing.Size(307, 21);
-            this.txtPath.TabIndex = 0;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(80, 75);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(53, 12);
+            this.linkLabel1.TabIndex = 1;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "更新地址";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(209, 132);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "打开";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // File
+            // AboutUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(495, 226);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.txtPath);
-            this.Name = "File";
-            this.Text = "File";
+            this.ClientSize = new System.Drawing.Size(238, 164);
+            this.Controls.Add(this.linkLabel1);
+            this.Name = "AboutUpdate";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "检查更新";
+            this.Load += new System.EventHandler(this.AboutUpdate_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -65,7 +59,6 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtPath;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
