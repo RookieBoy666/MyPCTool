@@ -29,6 +29,9 @@ namespace MyTool
             {
                 // string targetDir = string.Format(@"D:\BizMap\");//这是bat存放的目录
                 string targetDir1 = AppDomain.CurrentDomain.BaseDirectory; //或者这样写，获取程序目录
+                //D:\\Project\\MyPCTool\\MyPCTool\\bin\\Debug\\
+
+                targetDir1 = targetDir1.Replace("bin\\Debug\\", "Dos\\");
                 proc = new Process();
                 proc.StartInfo.WorkingDirectory = targetDir1;
                 proc.StartInfo.FileName = filename;//bat文件名称
@@ -37,13 +40,13 @@ namespace MyTool
                 proc.Start();
                 proc.WaitForExit();
                 // MessageBox.Show("成功！");
-               // Log.RegisterLog(filename + "  成功", DateTime.Now.ToString());
+                // Log.RegisterLog(filename + "  成功", DateTime.Now.ToString());
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Exception Occurred :{0},{1}", ex.Message, ex.StackTrace.ToString());
                 MessageBox.Show("失败！原因:" + ex.Message + "");
-              //  Log.RegisterLog(ex.Message, DateTime.Now.ToString());
+                //  Log.RegisterLog(ex.Message, DateTime.Now.ToString());
             }
         }
         //dosCommand Dos命令语句    
@@ -200,7 +203,7 @@ namespace MyTool
 
         private void 关于ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-          
+
 
         }
 
@@ -225,7 +228,7 @@ namespace MyTool
 
         private void File_Click(object sender, EventArgs e)
         {
-          // Thread th = new Thread(delegate () { new File().ShowDialog(); });
+            // Thread th = new Thread(delegate () { new File().ShowDialog(); });
             File file = new File();
             file.Show();
         }

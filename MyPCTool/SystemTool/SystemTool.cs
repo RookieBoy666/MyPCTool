@@ -15,6 +15,7 @@ namespace MyPCTool.SystemTool
             try
             {
                 string targetDir1 = AppDomain.CurrentDomain.BaseDirectory; //或者这样写，获取程序目录
+                targetDir1 = targetDir1.Replace("bin\\Debug\\", "Dos\\");
                 StartExeFile.runExe(targetDir1, "GPU-Z.exe");
             }
             catch (Exception ex)
@@ -27,6 +28,7 @@ namespace MyPCTool.SystemTool
             try
             {
                 string targetDir1 = AppDomain.CurrentDomain.BaseDirectory; //或者这样写，获取程序目录
+                targetDir1 = targetDir1.Replace("bin\\Debug\\", "Dos\\");
                 StartExeFile.runExe(targetDir1, "CPU-Z.exe");
             }
             catch (Exception ex)
